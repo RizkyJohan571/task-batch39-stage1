@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+
+</head>
+<body style="background-color: darkgray;">
+	
+	<form>
+	<div style="margin-bottom: 20px;
+				font-size: 40px;
+				display: flex;
+				justify-content: center;
+				">Get In Touch</div>
+
+	<div>
+		<label for="input-name">Name</label>
+		<input id ="input-name" type="text" placeholder="masukan nama">
+	</div>
+	<div>
+		<label for ="input-email">email</label>
+		<input id ="input-email" type="text" placeholder="masukan email">
+	</div>
+
+	<div>
+		<label for ="input-phone">phone</label>
+		<input id ="input-phone" type="text" placeholder="masukan no telpon">
+	</div>
+
+	<div>
+		<label for="input-subject">Subject</label>
+		<select id="input-subject">
+			<option value="">Select</option>
+			<option value="Frontend">Frontend</option>
+			<option value="Backend">Backend</option>
+			<option value="Fullstack">Fullstack</option>
+		</select>
+	</div>
+
+	<div>
+		<label for="input-message">Your Massage</label>
+		<textarea id="input-message"></textarea>
+	</div>
+
+	<div style="display: flex;
+				justify-content: flex-end;
+				"><button type ="button" onclick="submitData()">Submit</button></div>
+
+	</form>
+</body>
+<script src="form.js"></script>
+</html>
